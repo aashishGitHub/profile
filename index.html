@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aashish Kumar — Lead Software Engineer</title>
+  <meta name="description" content="Aashish Kumar — Lead Software Engineer specializing in Golang, Distributed Systems, AWS Cloud Architecture, and Full-Stack Product Engineering." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>AK<span class="nav__logo-bracket"> /&gt;</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Impact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content">
+      <p class="hero__greeting">Hi, my name is</p>
+      <h1 class="hero__name">Aashish Kumar</h1>
+      <h2 class="hero__title">Lead Software Engineer</h2>
+      <p class="hero__subtitle">
+        I architect <span class="highlight">distributed systems</span> in Go,
+        build <span class="highlight">cloud-native platforms</span> on AWS,
+        and craft <span class="highlight">delightful user experiences</span> with React &amp; TypeScript.
+      </p>
+      <div class="hero__tags">
+        <span class="tag">Golang</span>
+        <span class="tag">Distributed Systems</span>
+        <span class="tag">AWS Architect</span>
+        <span class="tag">React / TypeScript</span>
+        <span class="tag">AI / Semantic Search</span>
+        <span class="tag">Kubernetes</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+        <a href="#experience" class="btn btn--outline">View My Work</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="12">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="10">0</span><span class="hero__stat-plus">M+</span>
+          <span class="hero__stat-label">Users Impacted</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="1.25">0</span><span class="hero__stat-plus">M$</span>
+          <span class="hero__stat-label">Cost Savings Delivered</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="35">0</span><span class="hero__stat-plus">%</span>
+          <span class="hero__stat-label">Latency Reduction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">01.</span> About Me</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I'm a <strong>Lead Software Engineer</strong> who thrives at the intersection of
+            <strong>backend systems architecture</strong> and <strong>product-driven UI engineering</strong>.
+            Over 12+ years, I've gone from writing my first REST API to designing high-performance
+            microservices that serve millions and leading cross-functional teams through complex migrations.
+          </p>
+          <p>
+            My sweet spot is taking a murky, ambiguous problem — whether it's modernizing a legacy monolith,
+            building a semantic search engine from scratch, or scaling a platform to handle 40M+ transactions —
+            and turning it into a clean, maintainable system that the team can own confidently.
+          </p>
+          <p>
+            I believe great engineering is <em>empathetic engineering</em>. I care deeply about the people
+            I work with, the customers we serve, and the products we build. When I lead, I invest in
+            reducing onboarding friction, writing clear documentation, and creating an environment where
+            junior engineers ship production features within two weeks.
+          </p>
+          <div class="about__focus-areas">
+            <h3>Current Focus Areas</h3>
+            <ul>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                High-performance search with Golang + vector databases
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                Cloud-native architecture on AWS (EKS, Lambda, Terraform)
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                AI/LLM-powered RAG pipelines for enterprise search
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                Engineering team leadership &amp; mentorship
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__avatar">
+            <svg viewBox="0 0 200 200" class="about__avatar-svg">
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.2" />
+                  <stop offset="100%" style="stop-color:#64ffda;stop-opacity:0.05" />
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="180" height="180" rx="12" fill="url(#avatarGrad)" stroke="#64ffda" stroke-width="1.5"/>
+              <circle cx="100" cy="78" r="32" fill="none" stroke="#64ffda" stroke-width="1.5"/>
+              <path d="M55 165 C55 130, 145 130, 145 165" fill="none" stroke="#64ffda" stroke-width="1.5"/>
+              <text x="100" y="195" text-anchor="middle" fill="#64ffda" font-size="8" font-family="JetBrains Mono">Lead Engineer</text>
+            </svg>
+          </div>
+          <div class="about__info-cards">
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <span>12+ Years</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span>Team Lead</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span>Full-Stack</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>AWS Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">02.</span> Technical Arsenal</h2>
+      <div class="skills__grid">
+        <!-- Golang & Backend -->
+        <div class="skill-card skill-card--featured">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Golang &amp; Distributed Systems</h3>
+            <span class="skill-card__label">Primary</span>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>Go (Golang)</span>
+              <span>Gin Framework</span>
+              <span>Echo Framework</span>
+              <span>Goroutines / Channels</span>
+              <span>Concurrency Patterns</span>
+              <span>gRPC</span>
+              <span>Microservices</span>
+              <span>RESTful APIs</span>
+            </div>
+            <p class="skill-card__desc">Architecting high-performance services with Go's concurrency model. Reduced p99 latency by 35% through Goroutine-based concurrent indexing.</p>
+          </div>
+        </div>
+
+        <!-- Cloud & AWS -->
+        <div class="skill-card skill-card--featured">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>AWS &amp; Cloud Architecture</h3>
+            <span class="skill-card__label">Primary</span>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>AWS EC2</span>
+              <span>Lambda</span>
+              <span>S3</span>
+              <span>EKS</span>
+              <span>RDS</span>
+              <span>VPC / Networking</span>
+              <span>Terraform</span>
+              <span>Infrastructure as Code</span>
+            </div>
+            <p class="skill-card__desc">Provisioning and managing cloud infrastructure at scale. Deep expertise in DNS, DHCP, IPAM, and secure networking policies for 10M+ user platforms.</p>
+          </div>
+        </div>
+
+        <!-- Kubernetes & DevOps -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Kubernetes &amp; DevOps</h3>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>CI/CD Pipelines</span>
+              <span>Helm</span>
+              <span>Auto-scaling</span>
+              <span>Observability</span>
+            </div>
+            <p class="skill-card__desc">Containerized deployments with auto-scaling for global workloads. 30% faster deployment cycles through optimized CI/CD.</p>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Frontend &amp; UX Engineering</h3>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>React.js</span>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Design Systems</span>
+              <span>Storybook</span>
+              <span>RTL / Cypress</span>
+              <span>Playwright</span>
+            </div>
+            <p class="skill-card__desc">Full-stack UI architect. Led Angular-to-React migration boosting NPS by 18 points and reducing customer churn by 12%.</p>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Databases &amp; Search</h3>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>Couchbase</span>
+              <span>PostgreSQL</span>
+              <span>Vector Databases</span>
+              <span>Redis</span>
+              <span>Full-Text Search</span>
+              <span>SQL Server</span>
+            </div>
+            <p class="skill-card__desc">Expert in FTS + vector search for semantic document retrieval. Built RAG-based search improving self-service outcomes.</p>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.9 2-2 2h-4a2 2 0 0 1-2-2 4 4 0 0 1 4-4z"/><path d="M12 8v8"/><path d="M8 16a4 4 0 0 0 8 0"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></svg>
+            </div>
+            <h3>AI / LLM Integration</h3>
+          </div>
+          <div class="skill-card__body">
+            <div class="skill-tags">
+              <span>LLM Integration</span>
+              <span>RAG Pipelines</span>
+              <span>Embeddings</span>
+              <span>Semantic Search</span>
+              <span>Vector Search</span>
+              <span>AI Automation</span>
+            </div>
+            <p class="skill-card__desc">Shipped semantic search PoC using LLMs, embeddings, and vector databases. AI-driven testing automation for CI pipelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture Diagram -->
+      <div class="skills__architecture">
+        <h3>System Architecture I Typically Design</h3>
+        <div class="architecture-diagram">
+          <div class="arch-layer">
+            <div class="arch-label">Clients</div>
+            <div class="arch-nodes">
+              <div class="arch-node arch-node--client">React / Next.js</div>
+              <div class="arch-node arch-node--client">Mobile Apps</div>
+              <div class="arch-node arch-node--client">API Consumers</div>
+            </div>
+          </div>
+          <div class="arch-arrow">
+            <svg viewBox="0 0 24 40" fill="none" stroke="#64ffda" stroke-width="1.5"><line x1="12" y1="0" x2="12" y2="32"/><polyline points="6 26 12 34 18 26"/></svg>
+          </div>
+          <div class="arch-layer">
+            <div class="arch-label">API Gateway / Load Balancer</div>
+            <div class="arch-nodes">
+              <div class="arch-node arch-node--infra">AWS ALB / API Gateway</div>
+            </div>
+          </div>
+          <div class="arch-arrow">
+            <svg viewBox="0 0 24 40" fill="none" stroke="#64ffda" stroke-width="1.5"><line x1="12" y1="0" x2="12" y2="32"/><polyline points="6 26 12 34 18 26"/></svg>
+          </div>
+          <div class="arch-layer">
+            <div class="arch-label">Go Microservices (K8s)</div>
+            <div class="arch-nodes">
+              <div class="arch-node arch-node--go">Search Service (Gin)</div>
+              <div class="arch-node arch-node--go">Auth Service</div>
+              <div class="arch-node arch-node--go">Data Pipeline</div>
+              <div class="arch-node arch-node--go">Ticket Triage</div>
+            </div>
+          </div>
+          <div class="arch-arrow">
+            <svg viewBox="0 0 24 40" fill="none" stroke="#64ffda" stroke-width="1.5"><line x1="12" y1="0" x2="12" y2="32"/><polyline points="6 26 12 34 18 26"/></svg>
+          </div>
+          <div class="arch-layer">
+            <div class="arch-label">Data Layer</div>
+            <div class="arch-nodes">
+              <div class="arch-node arch-node--data">Couchbase / FTS</div>
+              <div class="arch-node arch-node--data">PostgreSQL</div>
+              <div class="arch-node arch-node--data">Vector DB</div>
+              <div class="arch-node arch-node--data">Redis Cache</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">03.</span> Where I've Worked</h2>
+      <div class="timeline">
+        <!-- Couchbase -->
+        <div class="timeline__item timeline__item--active">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Senior Software Engineer <span class="timeline__company">@ Couchbase Inc.</span></h3>
+              <span class="timeline__date">Oct 2023 — Present</span>
+              <span class="timeline__badge">Current</span>
+            </div>
+            <p class="timeline__focus">Focus: High-Performance Search Architecture &amp; Cloud Infrastructure</p>
+            <ul class="timeline__highlights">
+              <li>Architected a <strong>hybrid search service</strong> in Golang (Gin), using Goroutines for concurrent data indexing — <strong>reduced p99 latency by 35%</strong></li>
+              <li>Containerized search apps with Docker, managed Kubernetes clusters for high availability and auto-scaling across global workloads</li>
+              <li>Provisioned AWS resources via <strong>Terraform</strong>, implementing secure networking policies and optimized resource allocation</li>
+              <li>Designed robust <strong>RESTful APIs</strong> for vector search engine handling high-throughput queries at low latency</li>
+              <li>Led transition to <strong>microservices architecture</strong>, decoupling search from core database for improved scalability and fault tolerance</li>
+              <li>Delivered AI-powered <strong>semantic search PoC</strong> using LLMs, embeddings, and RAG pipelines</li>
+            </ul>
+            <div class="timeline__tech">
+              <span>Golang</span><span>Gin</span><span>Kubernetes</span><span>Docker</span><span>AWS</span><span>Terraform</span><span>Couchbase</span><span>Vector DB</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JustAnswer -->
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Software Engineer <span class="timeline__company">@ JustAnswer Inc.</span></h3>
+              <span class="timeline__date">Feb 2022 — Jul 2023</span>
+            </div>
+            <p class="timeline__focus">Focus: Full-Stack Modernization &amp; Cloud Networking</p>
+            <ul class="timeline__highlights">
+              <li>Designed a <strong>ticket triage platform</strong> using Golang microservices, processing <strong>40M+ annual transactions</strong></li>
+              <li>Responsible for customer services tools serving <strong>10M+ active users</strong> across USA, Europe, and Asia Pacific</li>
+              <li>Achieved <strong>25% cost savings</strong> by implementing "Chat First" help center apps, reducing phone and email ticket costs</li>
+              <li>Implemented self-resolution for email tickets — <strong>$100K/month cost reduction</strong></li>
+              <li>Resolved complex DNS, DHCP, and IPAM issues in AWS VPCs, ensuring <strong>99.99% uptime</strong></li>
+              <li>Led <strong>Angular-to-React migration</strong> boosting NPS by 18 points and reducing churn by 12%</li>
+            </ul>
+            <div class="timeline__tech">
+              <span>Golang</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Kubernetes</span><span>Docker</span><span>Terraform</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NetApp -->
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Member Technical Staff 3 <span class="timeline__company">@ NetApp</span></h3>
+              <span class="timeline__date">Feb 2019 — Feb 2022</span>
+            </div>
+            <p class="timeline__focus">Focus: Enterprise Systems &amp; Network Storage</p>
+            <ul class="timeline__highlights">
+              <li>Developed backend services for <strong>ONTAP storage provisioning</strong> in Golang, focusing on system-level performance</li>
+              <li>Implemented <strong>NVMe over Fabric</strong> solutions with deep Linux networking, TCP/IP, and IPAM knowledge</li>
+              <li>Created RESTful APIs using <strong>Echo framework</strong>, simplifying storage configurations by 50%</li>
+              <li>Integrated NetApp Storage with NVMe-oF creating APIs and UI — <strong>significant business impact</strong></li>
+              <li>Reduced configuration update time by 50% and support requests by 30%</li>
+            </ul>
+            <div class="timeline__tech">
+              <span>Golang</span><span>Echo</span><span>React</span><span>Angular</span><span>.NET</span><span>Java</span><span>Docker</span><span>Kubernetes</span><span>ESXi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eurofins -->
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Sr. Software Engineer <span class="timeline__company">@ Eurofins IT Solutions</span></h3>
+              <span class="timeline__date">Oct 2015 — Jan 2019</span>
+            </div>
+            <p class="timeline__focus">Focus: E-Commerce Platform &amp; Full-Stack Development</p>
+            <ul class="timeline__highlights">
+              <li>Led end-to-end development of Ordering module with a <strong>team of 5 developers</strong></li>
+              <li>Designed server-side APIs and migrated vanilla JS to AngularJS using UI design patterns</li>
+              <li>Built pub-sub event-based component interaction for shopping cart on hybrid application</li>
+              <li>Worked on Amazon-like recommendation systems based on historical data</li>
+            </ul>
+            <div class="timeline__tech">
+              <span>Angular</span><span>AngularJS</span><span>.NET Core</span><span>C#</span><span>Web APIs</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Early Career -->
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Software Engineer <span class="timeline__company">@ Emids &amp; DreamOrbit</span></h3>
+              <span class="timeline__date">Sep 2013 — Sep 2015</span>
+            </div>
+            <p class="timeline__focus">Focus: Full-Stack Foundations &amp; Healthcare/E-commerce</p>
+            <ul class="timeline__highlights">
+              <li>Built healthcare management systems (Davita) with dynamic polymorphism patterns</li>
+              <li>Developed e-commerce platform integrating Amazon and eBay APIs</li>
+              <li>Progressed from monolithic applications to microservices architecture</li>
+              <li>Gained early experience with cloud platforms and Linux server administration</li>
+            </ul>
+            <div class="timeline__tech">
+              <span>C#</span><span>.NET</span><span>SQL Server</span><span>jQuery</span><span>Web API</span><span>WCF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">04.</span> Impact &amp; Achievements</h2>
+      <p class="section__subtitle">Measurable business outcomes I've driven across organizations</p>
+
+      <div class="achievements__grid">
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">$1.25M+</span>
+            <span class="achievement-card__unit">Savings</span>
+          </div>
+          <h3>Cost Optimization</h3>
+          <p>Through efficient Golang code optimization and Kubernetes resource management across platforms.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">40%</span>
+            <span class="achievement-card__unit">Reduction</span>
+          </div>
+          <h3>Support Tickets</h3>
+          <p>Reduced customer support tickets through architectural improvements and proactive UI error handling.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">35%</span>
+            <span class="achievement-card__unit">Lower</span>
+          </div>
+          <h3>P99 Latency</h3>
+          <p>Reduced search latency via Goroutine-based concurrent indexing in the hybrid search service.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">45%</span>
+            <span class="achievement-card__unit">Faster</span>
+          </div>
+          <h3>Migration Velocity</h3>
+          <p>Accelerated Angular-to-React migration using incremental strangler-fig pattern + AI tools.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">+18</span>
+            <span class="achievement-card__unit">Points NPS</span>
+          </div>
+          <h3>Customer Satisfaction</h3>
+          <p>Boosted NPS post-migration through improved responsiveness, design, and reduced latency.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">50%</span>
+            <span class="achievement-card__unit">Faster</span>
+          </div>
+          <h3>Developer Onboarding</h3>
+          <p>Reduced onboarding time from 4 weeks to 2 through documentation and design system stewardship.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">37%</span>
+            <span class="achievement-card__unit">Lower</span>
+          </div>
+          <h3>Bug Rate</h3>
+          <p>Reduced JavaScript bug rate QoQ through TDD practices and rigorous error tracking — well below 1% industry benchmark.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card__metric">
+            <span class="achievement-card__number">99.99%</span>
+            <span class="achievement-card__unit">Uptime</span>
+          </div>
+          <h3>Platform Reliability</h3>
+          <p>Ensured near-perfect uptime by resolving complex cloud networking issues in AWS VPCs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">05.</span> Featured Projects</h2>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <div class="project-card project-card--large">
+          <div class="project-card__visual">
+            <svg viewBox="0 0 400 200" class="project-illustration">
+              <defs>
+                <linearGradient id="searchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.3"/>
+                  <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0.8"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="200" fill="url(#searchGrad)" rx="8"/>
+              <!-- Search icon -->
+              <circle cx="180" cy="90" r="35" fill="none" stroke="#64ffda" stroke-width="2"/>
+              <line x1="205" y1="115" x2="230" y2="140" stroke="#64ffda" stroke-width="3" stroke-linecap="round"/>
+              <!-- Vector dots -->
+              <circle cx="80" cy="60" r="4" fill="#64ffda" opacity="0.6"/><circle cx="110" cy="130" r="3" fill="#64ffda" opacity="0.4"/>
+              <circle cx="290" cy="50" r="5" fill="#64ffda" opacity="0.5"/><circle cx="320" cy="120" r="3" fill="#64ffda" opacity="0.3"/>
+              <circle cx="340" cy="70" r="4" fill="#64ffda" opacity="0.6"/><circle cx="60" cy="150" r="3" fill="#64ffda" opacity="0.4"/>
+              <!-- Connection lines -->
+              <line x1="80" y1="60" x2="145" y2="80" stroke="#64ffda" stroke-width="0.5" opacity="0.3"/>
+              <line x1="215" y1="80" x2="290" y2="50" stroke="#64ffda" stroke-width="0.5" opacity="0.3"/>
+              <line x1="215" y1="100" x2="320" y2="120" stroke="#64ffda" stroke-width="0.5" opacity="0.3"/>
+              <text x="200" y="180" text-anchor="middle" fill="#64ffda" font-family="JetBrains Mono" font-size="11">Semantic Vector Search</text>
+            </svg>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__label">Couchbase — AI Search Platform</span>
+            <h3>Hybrid Semantic Search Engine</h3>
+            <p>Architected a high-performance hybrid search service combining full-text search with vector similarity. Built with Golang and Gin, leveraging Goroutines for concurrent data indexing. Integrated LLM embeddings and Couchbase FTS with vector databases to enable RAG-based UX, dramatically improving search relevance and customer self-service outcomes.</p>
+            <div class="project-card__tech">
+              <span>Golang</span><span>Gin</span><span>Couchbase FTS</span><span>Vector DB</span><span>LLM / RAG</span><span>Kubernetes</span><span>AWS</span><span>Terraform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-card__visual">
+            <svg viewBox="0 0 400 200" class="project-illustration">
+              <defs>
+                <linearGradient id="ticketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#e8a838;stop-opacity:0.2"/>
+                  <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0.8"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="200" fill="url(#ticketGrad)" rx="8"/>
+              <!-- Ticket flow -->
+              <rect x="40" y="60" width="70" height="80" rx="6" fill="none" stroke="#e8a838" stroke-width="1.5"/>
+              <text x="75" y="95" text-anchor="middle" fill="#e8a838" font-size="8" font-family="JetBrains Mono">Ticket</text>
+              <text x="75" y="115" text-anchor="middle" fill="#e8a838" font-size="7" opacity="0.7">40M+/yr</text>
+              <line x1="115" y1="100" x2="155" y2="100" stroke="#e8a838" stroke-width="1.5" stroke-dasharray="4"/>
+              <polygon points="150,95 160,100 150,105" fill="#e8a838"/>
+              <rect x="165" y="60" width="70" height="80" rx="6" fill="none" stroke="#64ffda" stroke-width="1.5"/>
+              <text x="200" y="95" text-anchor="middle" fill="#64ffda" font-size="8" font-family="JetBrains Mono">Go Triage</text>
+              <text x="200" y="115" text-anchor="middle" fill="#64ffda" font-size="7" opacity="0.7">Service</text>
+              <line x1="240" y1="100" x2="280" y2="100" stroke="#64ffda" stroke-width="1.5" stroke-dasharray="4"/>
+              <polygon points="275,95 285,100 275,105" fill="#64ffda"/>
+              <rect x="290" y="60" width="70" height="80" rx="6" fill="none" stroke="#64ffda" stroke-width="1.5"/>
+              <text x="325" y="95" text-anchor="middle" fill="#64ffda" font-size="8" font-family="JetBrains Mono">Resolved</text>
+              <text x="325" y="115" text-anchor="middle" fill="#64ffda" font-size="7" opacity="0.7">$100K saved</text>
+              <text x="200" y="180" text-anchor="middle" fill="#ccd6f6" font-family="JetBrains Mono" font-size="10">Ticket Triage Pipeline</text>
+            </svg>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__label">JustAnswer — Customer Services</span>
+            <h3>Intelligent Ticket Triage Platform</h3>
+            <p>Designed a Golang microservices platform that automated ticket triage and routing for 10M+ users. Built "Chat First" help center apps achieving 25% cost savings. Implemented self-resolution for email tickets saving $100K/month.</p>
+            <div class="project-card__tech">
+              <span>Golang</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Kubernetes</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-card__visual">
+            <svg viewBox="0 0 400 200" class="project-illustration">
+              <defs>
+                <linearGradient id="storageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#5e81f4;stop-opacity:0.2"/>
+                  <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0.8"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="200" fill="url(#storageGrad)" rx="8"/>
+              <!-- Storage stacks -->
+              <rect x="140" y="40" width="120" height="25" rx="4" fill="none" stroke="#5e81f4" stroke-width="1.5"/>
+              <rect x="140" y="70" width="120" height="25" rx="4" fill="none" stroke="#5e81f4" stroke-width="1.5"/>
+              <rect x="140" y="100" width="120" height="25" rx="4" fill="none" stroke="#5e81f4" stroke-width="1.5"/>
+              <text x="200" y="57" text-anchor="middle" fill="#5e81f4" font-size="9" font-family="JetBrains Mono">NVMe-oF</text>
+              <text x="200" y="87" text-anchor="middle" fill="#5e81f4" font-size="9" font-family="JetBrains Mono">ONTAP</text>
+              <text x="200" y="117" text-anchor="middle" fill="#5e81f4" font-size="9" font-family="JetBrains Mono">VMware vSphere</text>
+              <!-- CLI to GUI arrow -->
+              <text x="90" y="85" text-anchor="middle" fill="#8892b0" font-size="9" font-family="JetBrains Mono">CLI &gt;_</text>
+              <text x="310" y="85" text-anchor="middle" fill="#64ffda" font-size="9" font-family="JetBrains Mono">GUI ▢</text>
+              <line x1="60" y1="140" x2="340" y2="140" stroke="#5e81f4" stroke-width="0.5" opacity="0.3"/>
+              <text x="200" y="170" text-anchor="middle" fill="#ccd6f6" font-family="JetBrains Mono" font-size="10">Enterprise Storage Platform</text>
+            </svg>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__label">NetApp — ONTAP &amp; OTV</span>
+            <h3>Enterprise Storage Provisioning</h3>
+            <p>Built backend services for ONTAP storage provisioning in Golang. Transformed CLI-based workflows into intuitive GUI, reducing configuration time by 50% and support requests by 30%. Integrated NVMe over Fabric solutions.</p>
+            <div class="project-card__tech">
+              <span>Golang</span><span>Echo</span><span>React</span><span>Angular</span><span>Docker</span><span>Kubernetes</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="projects.html" class="btn btn--outline">View All Projects In Detail →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PHILOSOPHY ========== -->
+  <section class="section philosophy" id="philosophy">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">06.</span> Leadership Philosophy</h2>
+      <div class="philosophy__grid">
+        <div class="philosophy__card">
+          <div class="philosophy__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#64ffda" stroke-width="1.5">
+              <circle cx="24" cy="16" r="8"/>
+              <path d="M10 40c0-7.73 6.27-14 14-14s14 6.27 14 14"/>
+              <path d="M24 24v-4" stroke-dasharray="2 2" opacity="0.5"/>
+              <circle cx="24" cy="16" r="12" stroke-dasharray="4 4" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3>Empathy-First Leadership</h3>
+          <p>I believe the best engineering leaders understand not just the code, but the people writing it and the customers using it. I invest deeply in understanding team dynamics, individual growth paths, and customer pain points. When my team wins, the product wins.</p>
+        </div>
+        <div class="philosophy__card">
+          <div class="philosophy__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#64ffda" stroke-width="1.5">
+              <rect x="4" y="8" width="40" height="32" rx="4"/>
+              <path d="M16 20l-6 6 6 6"/><path d="M32 20l6 6-6 6"/>
+              <line x1="22" y1="18" x2="26" y2="34"/>
+            </svg>
+          </div>
+          <h3>Technical Excellence</h3>
+          <p>I hold myself and my teams to a high bar. From clean API design and rigorous testing to performance optimization and production readiness — I believe quality is not negotiable. I use AI tools to augment, not replace, engineering judgment.</p>
+        </div>
+        <div class="philosophy__card">
+          <div class="philosophy__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#64ffda" stroke-width="1.5">
+              <path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14-11-8h14z"/>
+            </svg>
+          </div>
+          <h3>Product Ownership</h3>
+          <p>I think like a product owner, not just an engineer. Every line of code should connect to a user outcome. I've driven NPS improvements, reduced churn, and built tools that save millions — because I care about what we ship, not just how we ship it.</p>
+        </div>
+        <div class="philosophy__card">
+          <div class="philosophy__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#64ffda" stroke-width="1.5">
+              <path d="M12 38V24l12-14 12 14v14"/><path d="M20 38v-10h8v10"/>
+              <circle cx="24" cy="18" r="3"/>
+            </svg>
+          </div>
+          <h3>Growing With the Org</h3>
+          <p>I don't just want to solve today's problems — I want to build the systems and teams that solve tomorrow's. I'm committed to growing my career alongside the organization, taking on increasing scope, and mentoring the next generation of technical leaders.</p>
+        </div>
+      </div>
+
+      <div class="philosophy__quote">
+        <blockquote>
+          "The best code is written by engineers who understand why they're writing it, who it's for, and what happens when it breaks."
+        </blockquote>
+        <cite>— My engineering principle</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">07.</span> Education &amp; Certifications</h2>
+      <div class="certs__grid">
+        <div class="cert-card">
+          <div class="cert-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3>B.E. Electronics &amp; Communication</h3>
+          <p>RGPV Bhopal — 2013</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Couchbase FTS &amp; Vector Search</h3>
+          <p>Couchbase Academy</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>TypeScript, React, RTL, Cypress</h3>
+          <p>Educative.io</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Cloud Native &amp; Kubernetes</h3>
+          <p>Practitioner (Self-Paced)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__heading"><span class="section__number">08.</span> Get In Touch</h2>
+      <div class="contact__grid">
+        <div class="contact__text">
+          <h3>Let's Build Something Great Together</h3>
+          <p>I'm open to conversations about <strong>Lead / Principal Engineer roles</strong>, interesting distributed systems challenges, or just a good technical discussion. I'm particularly excited about teams working on search, AI infrastructure, or cloud-native platforms.</p>
+          <div class="contact__links">
+            <a href="mailto:aashishfullstack@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>aashishfullstack@gmail.com</span>
+            </a>
+            <a href="tel:+919738938387" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(+91) 9738938387</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aashish-kumar-0013/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/aashishGitHub" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+          <div class="contact__location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>HSR Layout, Bangalore, India</span>
+          </div>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your Name" />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com" />
+            </div>
+            <div class="form__group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?" />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__credit">Designed &amp; Built by Aashish Kumar</p>
+        <div class="footer__links">
+          <a href="https://github.com/aashishGitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aashish-kumar-0013/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:aashishfullstack@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

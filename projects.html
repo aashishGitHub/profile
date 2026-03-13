@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Aashish Kumar</title>
+  <meta name="description" content="Detailed project portfolio of Aashish Kumar — Lead Software Engineer." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    .projects-hero {
+      padding: calc(var(--nav-height) + 4rem) 0 3rem;
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-light) 100%);
+    }
+    .projects-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--color-text-bright);
+      margin-bottom: 0.5rem;
+    }
+    .projects-hero p {
+      color: var(--color-text-dim);
+      max-width: 600px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover { transform: translateX(-4px); }
+    .back-link svg { width: 16px; height: 16px; }
+
+    .project-detail {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--color-bg-lighter);
+    }
+    .project-detail:last-child { border-bottom: none; }
+    .project-detail__header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .project-detail__org {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--color-accent);
+      border-radius: 20px;
+      color: var(--color-accent);
+    }
+    .project-detail__role {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+    }
+    .project-detail h2 {
+      font-size: 1.5rem;
+      color: var(--color-text-bright);
+      margin-bottom: 0.5rem;
+    }
+    .project-detail__desc {
+      color: var(--color-text-dim);
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+      line-height: 1.7;
+    }
+    .project-detail__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .detail-section h3 {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+    .detail-section li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--color-text-dim);
+      line-height: 1.6;
+    }
+    .detail-section li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+    .project-detail__tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1.5rem;
+    }
+    .project-detail__tech span {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      background: var(--color-accent-dim);
+      color: var(--color-accent);
+      border-radius: 3px;
+    }
+    .project-visual-bar {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+    .metric-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.8rem;
+      background: var(--color-card);
+      border: 1px solid rgba(100, 255, 218, 0.15);
+      border-radius: 20px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+    .metric-pill strong {
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+    .metric-pill span { color: var(--color-text-dim); }
+
+    @media (max-width: 768px) {
+      .project-detail__grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>AK<span class="nav__logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#achievements">Impact</a></li>
+        <li><a href="index.html#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="projects-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Home
+      </a>
+      <h1>Project Portfolio</h1>
+      <p>Deep dives into the systems I've architected, the teams I've led, and the business outcomes I've delivered.</p>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 1: Couchbase ========== -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail__header">
+        <span class="project-detail__org">Couchbase Inc.</span>
+        <span class="project-detail__role">Senior Software Engineer — Oct 2023 to Present</span>
+      </div>
+      <h2>Hybrid Semantic Search Engine &amp; Cloud Infrastructure</h2>
+      <p class="project-detail__desc">
+        Led the architecture and development of a high-performance hybrid search service that combines traditional full-text search
+        with vector similarity search. The system powers RAG-based UX for enterprise customers, dramatically improving search
+        relevance and enabling AI-driven self-service outcomes.
+      </p>
+      <div class="project-visual-bar">
+        <div class="metric-pill"><strong>35%</strong> <span>p99 latency reduction</span></div>
+        <div class="metric-pill"><strong>RAG</strong> <span>pipeline PoC shipped</span></div>
+        <div class="metric-pill"><strong>Global</strong> <span>K8s auto-scaling</span></div>
+      </div>
+      <div class="project-detail__grid">
+        <div class="detail-section">
+          <h3>Key Contributions</h3>
+          <ul>
+            <li>Architected hybrid search service in <strong>Golang (Gin)</strong> using Goroutines for concurrent data indexing</li>
+            <li>Designed RESTful APIs for the vector search engine, handling high-throughput queries with low latency</li>
+            <li>Led the transition to a microservices architecture, decoupling search from core database</li>
+            <li>Delivered AI-powered semantic search PoC using LLMs, embeddings, and RAG pipelines</li>
+            <li>Integrated Couchbase FTS with vector database for semantic document retrieval</li>
+          </ul>
+        </div>
+        <div class="detail-section">
+          <h3>Infrastructure &amp; DevOps</h3>
+          <ul>
+            <li>Containerized applications with <strong>Docker</strong>, deployed on <strong>Kubernetes</strong> clusters</li>
+            <li>Provisioned AWS resources using <strong>Terraform</strong> with secure networking policies</li>
+            <li>Implemented auto-scaling for global workloads with high availability</li>
+            <li>Managed cloud networking including DNS, DHCP, and IPAM strategies</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-detail__tech">
+        <span>Golang</span><span>Gin Framework</span><span>Goroutines</span><span>Kubernetes</span><span>Docker</span>
+        <span>AWS (EC2, EKS, Lambda)</span><span>Terraform</span><span>Couchbase FTS</span><span>Vector Database</span>
+        <span>LLM / RAG</span><span>React</span><span>TypeScript</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 2: JustAnswer ========== -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail__header">
+        <span class="project-detail__org">JustAnswer Inc.</span>
+        <span class="project-detail__role">Sr. Software Engineer — Feb 2022 to Jul 2023</span>
+      </div>
+      <h2>Intelligent Customer Service Platform</h2>
+      <p class="project-detail__desc">
+        Designed and built customer-facing web and mobile applications serving 10M+ active users across USA, Europe, and Asia Pacific.
+        Led the modernization of the help center from legacy systems to a React-based platform, while simultaneously building the
+        Golang microservices backbone for ticket triage and automation.
+      </p>
+      <div class="project-visual-bar">
+        <div class="metric-pill"><strong>40M+</strong> <span>annual transactions</span></div>
+        <div class="metric-pill"><strong>$100K/mo</strong> <span>cost savings</span></div>
+        <div class="metric-pill"><strong>25%</strong> <span>CS cost reduction</span></div>
+        <div class="metric-pill"><strong>+18</strong> <span>NPS improvement</span></div>
+        <div class="metric-pill"><strong>12%</strong> <span>churn reduction</span></div>
+      </div>
+      <div class="project-detail__grid">
+        <div class="detail-section">
+          <h3>Backend &amp; Systems</h3>
+          <ul>
+            <li>Designed ticket triage platform using <strong>Golang microservices</strong> processing 40M+ annual transactions</li>
+            <li>Owned Golang and Node.js-based backend APIs for customer service workflows</li>
+            <li>Implemented concurrency patterns to handle peak loads efficiently</li>
+            <li>Built CI/CD pipelines and managed infrastructure using Terraform</li>
+            <li>Resolved complex cloud infrastructure issues (DNS, DHCP, IPAM) ensuring 99.99% uptime</li>
+          </ul>
+        </div>
+        <div class="detail-section">
+          <h3>Frontend &amp; Product Impact</h3>
+          <ul>
+            <li>Built "Chat First" help center apps — <strong>25% cost savings</strong> for Customer Service</li>
+            <li>Implemented self-resolution for email tickets — <strong>$100K/month</strong> reduction</li>
+            <li>Led <strong>Angular-to-React migration</strong> using strangler-fig pattern — 45% faster</li>
+            <li>Built admin Q&amp;A app reducing agent ticket handling from 2 min to 40 seconds</li>
+            <li>Contributed to design system components in Storybook for team-wide reuse</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-detail__tech">
+        <span>Golang</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span>
+        <span>Kubernetes</span><span>Docker</span><span>.NET Core</span><span>Playwright</span><span>RTL</span>
+        <span>A/B Testing</span><span>Terraform</span><span>AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 3: NetApp ========== -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail__header">
+        <span class="project-detail__org">NetApp</span>
+        <span class="project-detail__role">Member Technical Staff 3 — Feb 2019 to Feb 2022</span>
+      </div>
+      <h2>ONTAP &amp; OTV — Enterprise Storage Platform</h2>
+      <p class="project-detail__desc">
+        Designed and developed APIs and UIs for ONTAP Select Deploy and ONTAP Tools for VMware vSphere, transforming
+        complex CLI-based storage provisioning workflows into intuitive graphical interfaces used by enterprise customers globally.
+      </p>
+      <div class="project-visual-bar">
+        <div class="metric-pill"><strong>50%</strong> <span>config time reduction</span></div>
+        <div class="metric-pill"><strong>30%</strong> <span>fewer support tickets</span></div>
+        <div class="metric-pill"><strong>15%</strong> <span>page load optimization</span></div>
+      </div>
+      <div class="project-detail__grid">
+        <div class="detail-section">
+          <h3>Key Contributions</h3>
+          <ul>
+            <li>Developed backend services for ONTAP storage provisioning in <strong>Golang</strong></li>
+            <li>Implemented <strong>NVMe over Fabric</strong> integration — CLI to GUI transformation</li>
+            <li>Created RESTful APIs using <strong>Echo framework</strong> simplifying configurations by 50%</li>
+            <li>Built 7-step Datastore Provisioning workflow on OTV with Angular dashboard</li>
+          </ul>
+        </div>
+        <div class="detail-section">
+          <h3>Systems &amp; Networking</h3>
+          <ul>
+            <li>Deep understanding of <strong>Linux networking</strong>, TCP/IP, and IP address management</li>
+            <li>Utilized Docker for local dev and Kubernetes for orchestrating management services</li>
+            <li>Optimized page load times by 15% using caching and minification</li>
+            <li>Worked with ESXi, VMware vSphere across hybrid cloud environments</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-detail__tech">
+        <span>Golang</span><span>Echo Framework</span><span>React</span><span>Angular</span><span>.NET</span>
+        <span>Java</span><span>SQL</span><span>ESXi</span><span>REST APIs</span><span>Kubernetes</span><span>Docker</span>
+        <span>NVMe-oF</span><span>Linux Networking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 4: Eurofins ========== -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail__header">
+        <span class="project-detail__org">Eurofins IT Solutions</span>
+        <span class="project-detail__role">Sr. Software Engineer — Oct 2015 to Jan 2019</span>
+      </div>
+      <h2>Eurofins Online (EOL Digital) — Global Lab E-Commerce</h2>
+      <p class="project-detail__desc">
+        EOL is a global e-commerce platform for ordering and tracking digital lab services. Led end-to-end development
+        of the Ordering module, managing a team of 5 developers from requirements to production.
+      </p>
+      <div class="project-detail__grid">
+        <div class="detail-section">
+          <h3>Key Contributions</h3>
+          <ul>
+            <li>Led team of <strong>5 developers</strong> through full SDLC — requirements, planning, and delivery</li>
+            <li>Designed server-side APIs, LINQ queries, and UI engineering</li>
+            <li>Built custom pub-sub component interaction for Shopping Cart</li>
+            <li>Migrated vanilla JavaScript application to AngularJS</li>
+            <li>Worked on Amazon-like recommendation systems based on historical data</li>
+          </ul>
+        </div>
+        <div class="detail-section">
+          <h3>Team Leadership</h3>
+          <ul>
+            <li>Requirements gathering, planning, and task distribution</li>
+            <li>Code reviews and architectural guidance for the team</li>
+            <li>REST service development using HTTP Client and Web API</li>
+            <li>Identified and applied UI design patterns for migration strategy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-detail__tech">
+        <span>Angular</span><span>AngularJS</span><span>.NET Core</span><span>C#</span><span>Web APIs</span>
+        <span>SQL Databases</span><span>LINQ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECT 5: Early Career ========== -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail__header">
+        <span class="project-detail__org">Emids &amp; DreamOrbit</span>
+        <span class="project-detail__role">Software Engineer — Sep 2013 to Sep 2015</span>
+      </div>
+      <h2>Healthcare Management &amp; E-Commerce Platforms</h2>
+      <p class="project-detail__desc">
+        Built foundational expertise across healthcare (Davita/Capella) and e-commerce (Shop-Men) domains,
+        developing full-stack applications with emphasis on dynamic backend patterns and user-friendly interfaces.
+      </p>
+      <div class="project-detail__grid">
+        <div class="detail-section">
+          <h3>Capella — Healthcare (Davita)</h3>
+          <ul>
+            <li>Owned SNP module implementing Insurance Company (Payor) features</li>
+            <li>Designed <strong>dynamic polymorphism</strong> using interfaces for runtime method selection</li>
+            <li>Implemented patient state machine with screening-based skip/postpone logic</li>
+            <li>Built with C#, Web API, LINQ, and Entity Framework</li>
+          </ul>
+        </div>
+        <div class="detail-section">
+          <h3>Shop-Men — E-Commerce</h3>
+          <ul>
+            <li>Integrated Amazon and eBay APIs via WCF services</li>
+            <li>Built personalized product filtering based on body type, age, and profession</li>
+            <li>Designed Stylist-only screens for manual product curation and "Complete Outfit" collage</li>
+            <li>Backend Windows service for real-time availability and pricing updates</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-detail__tech">
+        <span>C#</span><span>.NET</span><span>Web API</span><span>SQL Server</span><span>jQuery</span>
+        <span>Entity Framework</span><span>LINQ</span><span>WCF</span><span>MVC 4</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section" style="text-align: center; padding-bottom: 5rem;">
+    <div class="container">
+      <h2 style="font-size: 1.8rem; color: var(--color-text-bright); margin-bottom: 1rem;">Interested in Working Together?</h2>
+      <p style="color: var(--color-text-dim); max-width: 500px; margin: 0 auto 2rem;">
+        I'm always open to discussing new opportunities, distributed systems challenges, or just good engineering conversations.
+      </p>
+      <a href="index.html#contact" class="btn btn--primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__credit">Designed &amp; Built by Aashish Kumar</p>
+        <div class="footer__links">
+          <a href="https://github.com/aashishGitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aashish-kumar-0013/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:aashishfullstack@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
